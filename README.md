@@ -26,5 +26,5 @@ You can insert a screenshot or a link to the deployed version here.
 - *HTML5*
 - *CSS3*
 - *JavaScript (ES6)*
-
+- *React*
 ---
