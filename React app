@@ -1,0 +1,7 @@
+import BrowserHistorySimulation from './BrowserHistorySimulation';
+
+function App() {
+  return <BrowserHistorySimulation />;
+}
+
+export default App;
