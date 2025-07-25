@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Browser History Simulator</title>
+  <style>
+    body { font-family: Arial; margin: 30px; }
+    input, button, select { margin: 5px; padding: 8px; }
+    #historyList { margin-top: 20px; }
+    .history-item { border-bottom: 1px solid #ccc; padding: 5px 0; }
+    .timestamp { color: gray; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <h2>Browser History Simulation</h2>
+
+  <input type="text" id="urlInput" placeholder="Enter URL" />
+  <button onclick="addURL()">Visit</button>
+
+  <label for="historyLength">Show last</label>
+  <select id="historyLength" onchange="renderHistory()">
+    <option value="3">3</option>
+    <option value="5" selected>5</option>
+    <option value="10">10</option>
+    <option value="All">All</option>
+  </select>
+  <label>URLs</label>
+
+  <button onclick="clearHistory()">Clear History</button>
+
+  <div id="historyList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
